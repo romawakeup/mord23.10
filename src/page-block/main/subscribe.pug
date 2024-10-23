@@ -1,0 +1,31 @@
+-
+  var cards = [
+    {
+      image: "./img/sub-img1.png",
+    },
+    {
+      image: "./img/sub-img2.png",
+    },
+    {
+      image: "./img/sub-img3.png",
+    },
+    {
+      image: "./img/sub-img4.png",
+    },
+    {
+      image: "./img/sub-img4.png",
+    },
+    {
+      image: "./img/sub-img4.png",
+    },
+   
+  ];
+
+section.subscribe
+    .container
+        h2.title-section.title-section--left Подпишись!
+        .swiper 
+            .swiper-wrapper 
+                 each card in cards
+                    .swiper-slide 
+                        img.swiper-slide__img(src=`${card.image}`, alt="")

@@ -1,0 +1,168 @@
+.header {
+    padding-bottom: 13px;
+    // background-color: green;
+}
+
+.header__wrapper {
+    max-width: 1870px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 15%;
+    gap: 7px;
+
+}
+
+.logo__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.header__logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: #A72327;
+    text-transform: uppercase;
+}
+
+.header__menu {
+    margin-right: 20%;
+}
+
+.header__menu-list {
+    max-width: 1200px;
+    display: flex;
+    gap: 5.5%;
+}
+
+.header__menu-item {}
+
+.header__menu-link {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: $black;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: .4s ease;
+}
+
+.header__menu-link:hover {
+    padding: 12px 42px 12px 35px;
+    background-color: #E52A2E;
+    color: $white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 30%;
+}
+
+.header__search {}
+
+.search__search-icon {
+    min-width: 22px;
+    min-height: 22px;
+    cursor: pointer;
+
+}
+
+.header__airplane {}
+
+.header__airplane-icon {
+    min-width: 45px;
+    min-height: 37px;
+    cursor: pointer;
+}
+
+.header__language {
+    display: flex;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.header__language-text {}
+
+.header__language-icon {}
+
+
+
+@media (max-width:1760px) {
+    .header__menu-link {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1570px) {
+    .logo {
+        margin-right: 5%;
+    }
+}
+
+@media (max-width:1200px) {
+    .header__logo-text {
+        font-size: 18px;
+    }
+    .header__menu-link {
+        font-size: 12px;
+    }
+
+    .logo {
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .logo {
+        margin-right: 3%;
+    }
+    .header__actions {
+        gap: 15%;
+    }
+    .search__search-icon {
+        min-width: 17px;
+        min-height: 17px;
+    }
+
+    .header__airplane-icon {
+        min-width: 26.5px;
+        min-height: 23px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header__wrapper{
+        justify-content: space-between;
+    }
+
+
+
+    .header__language-text {
+        font-size: 12px;
+    }
+    .logo {
+        margin-right: 1%;
+    }
+}
+
+@media (max-width: 410px) {
+    .header__actions  {
+        gap: 15%;
+        
+    }
+}
+

@@ -1,0 +1,90 @@
+.excursions {
+    padding-top: 65px;
+    background-color: #F4F4F4;
+    margin-bottom: 100px;
+}
+
+.excursions__wrapper {
+    padding-bottom: 180px;
+}
+
+
+
+.excursions__bg-img{
+    
+    
+}
+
+.excursions__cards {
+    display: flex;
+    gap: 5%;
+    margin-bottom: 180px;
+    overflow-x: auto;
+}
+
+.excursions__card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 9px 9px 0px #00000040;
+    min-width: 860px;
+    min-height: 464px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    border-radius: 28px;
+
+}
+
+.title-block--excursions {
+    font-size: 40px;
+    color: $white;
+    font-weight: 800;
+}
+
+.excursions__btn {
+    margin-top: 50px;
+    border: 2px solid white;
+    padding: 17px 38px;
+    border-radius: 66px;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    transition: background-color .3s ease;
+}
+
+.excursions__btn:hover {
+    background-color: #E52A2E99;
+}
+
+.excursions__btn-text {
+    font-family: 'Lato';
+    font-size: 22px;
+    color: $white;
+    font-weight: 600;
+}
+
+.excursions__btn-icon {}
+
+@media (max-width:400px) {
+    .excursions__card {
+        min-width: 341px;
+        min-height: 238px;
+    }
+
+    .title-block--excursions {
+        font-size: 20px;
+        color: $white;
+        font-weight: 800;
+    }
+
+    .excursions__btn {
+        margin-top: 14px;
+padding: 11px 25px;
+    }
+
+    .excursions__btn-text {
+        font-size: 12.77px;
+    }
+}

@@ -1,0 +1,58 @@
+mixin image(path, className)
+    img(src=`./images/${path}` class=className)
+mixin assetsImages(path, className)
+    img(src=`./assets/images/${path}` class=className)
+
+mixin icon(name, className)
+    svg(class=className)
+        use(xlink:href=`iconsprite/icons/sprite.svg#${name}`)
+
+mixin bannerTitle(title, img)
+    .banner-title(data-aos="blur-animation" data-aos-duration="2000")
+        .container.banner-title__container
+            .banner-title__pic
+                +image(img, 'banner-title__img')
+            h2.banner-title__title=title
+
+//- mixin newsCard(card, i)
+//-     a(href="#").card.card--news
+//-         .card__body
+//-             .card__pic
+//-                 +image(`news/${i + 1}.jpg`, 'card__img')
+//-             .card__content
+//-                 .card__date=card.date
+//-                 .card__title=card.title
+//-                 .card__desc=card.text
+
+//- mixin congCard(card, i)
+//-     a(href="#").card
+//-         .card__pic
+//-             +image(`congratulations/${i + 1}.jpg`, 'card__img')
+//-         .card__content
+//-             .card__title=card.title
+//-             .card__desc=card.text
+//-             .card__detail-link Подробнее
+
+//- mixin title(title)
+//-     .banner-title
+//-         .banner-title__pic
+//-             +image('banner-title.jpg', 'banner-title__img')
+//-         .container.banner-title__container
+//-             h1.banner-title__title=title
+
+//- mixin news3(rootClass)
+//-     +newsCard({
+//-         title: 'На М-500 планируется реконструкция',
+//-         text: 'Уменьшить углеродный след при производстве продукции намерена компания «Щекиноазот» – в соответствии со стремлением мирового сообщества сократить антропогенные выбросы парниковых газов.',
+//-         date: '12.09.2022'
+//-     }, 0)
+//-     +newsCard({
+//-         title: 'АК-270/АС-340 готовится к пусконаладке',
+//-         text: 'В декабре 2021 года на площадке строительства комплекса азотной кислоты и аммиачной селитры АК-270/АС-340 завершат монтаж технологических трубопроводов и магистральных кабельных сетей; работы по расключению оборудования внутри титулов будут выполняться в зимний период.',
+//-         date: '12.09.2022'
+//-     }, 1)
+//-     +newsCard({
+//-         title: 'На АМКАР доставляется крупногабаритное оборудование',
+//-         text: 'В настоящее время на площадке строительства комплекса производств аммиака и карбамида А-525/К-700 активно ведутся работы по строительству зданий и сооружений, по сборке железобетонной трубной эстакады, сборке и монтажу металлических конструкций, укладке  подземных трубопроводов. Продолжается выемка и замещение грунта в зоне склада карбамида. Идут работы по возведению дополнительных общежитий и инраструктурных объектов в зоне городка китайских строителей.',
+//-         date: '12.09.2022'
+//-     }, 2)

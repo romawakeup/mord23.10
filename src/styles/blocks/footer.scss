@@ -1,0 +1,143 @@
+
+.footer {
+    background-image: url(./img/footer-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: $white;
+    
+}
+
+.footer__wrapper {
+    margin: 0 auto;
+    max-width: 1740px;
+    padding: 40px 15px 30px 15px;
+    display: flex;
+    align-items: center;
+    gap: 11%;
+    
+}
+
+.logo--footer {
+    margin-right: 30px;
+}
+
+.logo__img--footer {
+    width: 82px;
+    height: 79px;
+    min-width: 36.5px;
+    min-height: 36.5px;
+}
+
+.footer__inner-info {
+    display: flex;
+    align-items: center;
+}
+
+.footer__info {}
+
+.footer__info-text {
+    max-width: 630px;
+    font-size: 21.5px;
+    line-height: 1.49;
+    font-weight: 700;
+
+
+    span {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.footer__info-privacy-policy {
+    display: block;
+    margin-top: 10px;
+    color: #F58484;
+}
+
+.footer__inner-actions {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    
+    gap: 8.64%;
+
+}
+
+.footer__tel {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.49;
+    white-space: nowrap;
+}
+
+.footer__question {
+    padding: 16px 28px;
+    border: 1px solid $white;
+    font-size: 17.24px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+    transition: outline .3s ease;
+    white-space: nowrap;
+}
+
+.footer__question:hover {
+    outline: 5px solid $white;
+    
+}
+
+.footer__social-list {
+    display: flex;
+    align-items: center;
+    gap: 40%;
+}
+
+.footer__social-item {}
+
+.footer__social-link {}
+
+.footer__social-link-icon {
+    min-width: 29px;
+    min-height: 18px;
+}
+
+@media (max-width:1610px) {
+    .footer__inner-actions {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+}
+
+
+@media (max-width:1120px) {
+    .footer__wrapper {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+}
+
+@media (max-width:390px) {
+    .footer__info-text {
+        max-width: 290px;
+        font-size: 13px;
+        span {
+            font-size: 10.85px;
+        }
+    }
+
+    .footer__tel {
+        font-size: 15px;
+    }
+
+    .footer__question{
+        font-size: 9.43px;
+        padding: 9px 15px;
+    }
+
+    .footer__info-privacy-policy {
+        font-size: 9px;
+    }
+}

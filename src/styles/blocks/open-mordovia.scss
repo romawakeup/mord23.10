@@ -1,0 +1,58 @@
+.open-mordovia {
+   
+    margin-bottom: 180px;
+}
+
+
+
+.open-mordovia__wrapper {
+   margin-top: 30px;
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.open-mordovia__content {
+    max-width: 775px;
+}
+
+.open-mordovia__content-list {
+    font-size: 18px;
+    line-height: 1.47;
+}
+
+.open-mordovia__content-item {
+    margin-bottom: 20px;
+}
+
+.open-mordovia__content-link {
+    font-size: 18px;
+    color: #DA1C22;
+}
+
+.open-mordovia__video {
+    
+}
+
+
+
+.open-mordovia__video-bg {
+   
+    
+    
+}
+
+@media (max-width:1300px) {
+    .open-mordovia__wrapper {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+@media (max-width:400px) {
+    .open-mordovia__content{
+        max-width: 360px;
+        font-size: 14px;
+
+    }
+}

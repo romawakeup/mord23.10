@@ -1,0 +1,54 @@
+-
+  var cards = [
+    {
+      title: "По страницам истории — Саранск",
+      image: "./img/inspire-img1.png",
+    },
+    {
+      title: "По страницам истории — Саранск",
+      image: "./img/inspire-img2.png",
+    },
+    {
+      title: "Якшамо(a) Атя и Деды Морозы из национальных регионов России установили мировой рекорд",
+      image: "./img/inspire-img3.png",
+    },
+    {
+      title: "В Саранске состоится общегородской День здоровья",
+      image: "/img/inspire-img4.png",
+    },
+    {
+      title: "Рецепты национальной кухни. Мордовские пельмени.",
+      image: "/img/inspire-img5.png",
+    },
+      {
+      title: "Рецепты национальной кухни. Мордовские пельмени.",
+      image: "/img/inspire-img5.png",
+    },
+      {
+      title: "Рецепты национальной кухни. Мордовские пельмени.",
+      image: "/img/inspire-img5.png",
+    },
+      {
+      title: "Рецепты национальной кухни. Мордовские пельмени.",
+      image: "/img/inspire-img5.png",
+    },
+  ];
+
+section.inspire
+  .container
+    .inspire__title-wrapper 
+      h2.title-section.title-section--left Вдохновись! 
+      ul.inspire__list 
+        li.inspire__item 
+          a.inspire__link(href="") Статьи
+        li.inspire__item 
+          a.inspire__link(href="") Новости
+        li.inspire__item 
+          a.inspire__link(href="") Топ-события
+    .swiper 
+      .swiper-wrapper.inspire__cards 
+        each card in cards
+          .swiper-slide.inspire__card 
+            img.inspire__card-img(src=`${card.image}`, alt="")
+            p.inspire__card-text=card.title
+
