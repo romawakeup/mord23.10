@@ -1,9 +1,16 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Manrope", sans-serif;
 }
 
 
+
 .title-section {
+    margin-bottom: 50px;
    font-size: 40px;
    font-weight: 800;
    text-align: center;
@@ -14,11 +21,16 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
+.home-section {
+    padding: 85px 0 85px 0;
+}
+
+
+
 
 @media (max-width:400px) {
     .title-section {
         font-size: 20px;
     }
-
     
 }

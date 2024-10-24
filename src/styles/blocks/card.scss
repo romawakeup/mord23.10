@@ -1,0 +1,40 @@
+.card {}
+
+.card__picture {
+    margin-bottom: 12px;
+}
+
+.card__picture-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
+
+}
+
+.card__content-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 10px;
+}
+
+.card__content-text {
+    padding-left: 20px;
+    position: relative;
+    color: #747474;
+    font-size: 14px;
+}
+
+.card__content-text::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-size: contain;
+    background-image: url("./img/calendar.svg");
+}

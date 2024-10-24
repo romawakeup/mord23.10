@@ -8,6 +8,48 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 	</head>
 	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper"> 
+					<div class="logo"> <img class="logo__img" src="./img/logo.svg" alt="Мордовия">
+						<p class="header__logo-text">Мордовия </p>
+					</div>
+					<nav class="header__menu"> 
+						<ul class="header__menu-list"> 
+							<li class="header__menu-item"> <a class="header__menu-link" href="#">Главная</a></li>
+							<li class="header__menu-item"> <a class="header__menu-link" href="#">О Мордовии</a></li>
+							<li class="header__menu-item"> <a class="header__menu-link" href="#">Чем заняться</a></li>
+							<li class="header__menu-item"> <a class="header__menu-link" href="#">Что поесть</a></li>
+							<li class="header__menu-item"> <a class="header__menu-link" href="#">Где разместиться</a></li>
+							<li class="header__menu-item"> <a class="header__menu-link" href="#">Маршруты</a></li>
+							<li class="header__menu-item"> <a class="header__menu-link" href="#">Прием гостей</a></li>
+						</ul>
+					</nav>
+					<div class="header__actions"> 
+						<button class="header__search-btn"> <img class="search__search-icon" src="./img/search-icon.svg" alt="Поиск"></button><a class="header__airplane-link"> <img class="header__airplane-icon" src="./img/airplane-icon.svg" alt="Самолет"></a>
+						<button class="header__language-btn"> 
+							<ul class="header__language-text">RU </ul><img class="header__language-icon" src="./img/arrow-icon.svg" alt="">
+						</button>
+					</div>
+					<button class="header__burger-menu" id="burger"> 
+						<div class="header__burger-menu-el"></div>
+						<div class="header__burger-menu-el"></div>
+						<div class="header__burger-menu-el"></div>
+					</button>
+					<nav class="header__sidebar-menu">
+						<ul class="header__sidebar-list">
+							<li class="header__sidebar-item"> <a class="header__sidebar-link" href="#">Главная</a></li>
+							<li class="header__sidebar-item"> <a class="header__sidebar-link" href="#">О Мордовии</a></li>
+							<li class="header__sidebar-item"> <a class="header__sidebar-link" href="#">Чем заняться</a></li>
+							<li class="header__sidebar-item"> <a class="header__sidebar-link" href="#">Что поесть</a></li>
+							<li class="header__sidebar-item"> <a class="header__sidebar-link" href="#">Где разместиться</a></li>
+							<li class="header__sidebar-item"> <a class="header__sidebar-link" href="#">Маршруты</a></li>
+							<li class="header__sidebar-item"> <a class="header__sidebar-link" href="#">Прием гостей</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 		<main class="main"> 
 			<section class="page-banner">
 				<h1 class="page-banner__title">13 причин <span class="page-banner__title--size">посетить Мордовию:
@@ -32,7 +74,61 @@
 							</div>
 						</div></span></h1>
 			</section>
-			<section class="inspire">
+			<section class="home-section home-section--events">
+				<div class="container">
+					<h2 class="title-section">Узнай о событиях</h2>
+					<div class="events__wrapper"> 
+						<div class="events__cards"> 
+							<div class="card"> 
+								<div class="card__picture"> <img class="card__picture-img" src="./img/events-img1.jpg" alt=""></div>
+								<div class="card__content">
+									<h3 class="card__content-title">Новогодняя квест-экскурсия «Загадки города С»</h3>
+									<p class="card__content-text">22 ноября - 31 января, 9:00 - 18:00 </p>
+								</div>
+							</div>
+							<div class="card"> 
+								<div class="card__picture"> <img class="card__picture-img" src="./img/events-img1.jpg" alt=""></div>
+								<div class="card__content">
+									<h3 class="card__content-title">Новогодняя квест-экскурсия «Загадки города С»</h3>
+									<p class="card__content-text">22 ноября - 31 января, 9:00 - 18:00 </p>
+								</div>
+							</div>
+							<div class="card"> 
+								<div class="card__picture"> <img class="card__picture-img" src="./img/events-img1.jpg" alt=""></div>
+								<div class="card__content">
+									<h3 class="card__content-title">Новогодняя квест-экскурсия «Загадки города С»</h3>
+									<p class="card__content-text">22 ноября - 31 января, 9:00 - 18:00 </p>
+								</div>
+							</div>
+							<div class="card"> 
+								<div class="card__picture"> <img class="card__picture-img" src="./img/events-img1.jpg" alt=""></div>
+								<div class="card__content">
+									<h3 class="card__content-title">Новогодняя квест-экскурсия «Загадки города С»</h3>
+									<p class="card__content-text">22 ноября - 31 января, 9:00 - 18:00 </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="home-section home-section--excursions">
+				<div class="container">
+					<h2 class="title-section">Выбери туры и экскурсии</h2>
+					<div class="excursions__wrapper"> 
+						<div class="excursions__cards">
+							<div class="excursions__card" style="background-image: url(./img/excursions-img1.png)"> 
+								<h3 class="title-block title-block--excursions">Интерактивы и мастер-классы </h3>
+								<button class="excursions__btn">Посмотри</button>
+							</div>
+							<div class="excursions__card" style="background-image: url(./img/excursions-img2.png)"> 
+								<h3 class="title-block title-block--excursions">Интерактивы и мастер-классы </h3>
+								<button class="excursions__btn">Посмотри</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="home-section home-section--inspire">
 				<div class="container">
 					<div class="inspire__title-wrapper"> 
 						<h2 class="title-section title-section--left">Вдохновись! </h2>
@@ -42,37 +138,37 @@
 							<li class="inspire__item"> <a class="inspire__link" href="">Топ-события</a></li>
 						</ul>
 					</div>
-					<div class="swiper"> 
-						<div class="swiper-wrapper inspire__cards"> 
-							<div class="swiper-slide inspire__card"> <img class="inspire__card-img" src="./img/inspire-img1.png" alt="">
+					<div class="inspire-swiper swiper"> 
+						<div class="inspire__cards swiper-wrapper">
+							<div class="inspire__card swiper-slide"><img class="inspire__card-img" src="./img/inspire-img1.png" alt="">
 								<p class="inspire__card-text">По страницам истории — Саранск</p>
 							</div>
-							<div class="swiper-slide inspire__card"> <img class="inspire__card-img" src="./img/inspire-img2.png" alt="">
+							<div class="inspire__card swiper-slide"><img class="inspire__card-img" src="./img/inspire-img2.png" alt="">
 								<p class="inspire__card-text">По страницам истории — Саранск</p>
 							</div>
-							<div class="swiper-slide inspire__card"> <img class="inspire__card-img" src="./img/inspire-img3.png" alt="">
+							<div class="inspire__card swiper-slide"><img class="inspire__card-img" src="./img/inspire-img3.png" alt="">
 								<p class="inspire__card-text">Якшамо(a) Атя и Деды Морозы из национальных регионов России установили мировой рекорд</p>
 							</div>
-							<div class="swiper-slide inspire__card"> <img class="inspire__card-img" src="/img/inspire-img4.png" alt="">
+							<div class="inspire__card swiper-slide"><img class="inspire__card-img" src="/img/inspire-img4.png" alt="">
 								<p class="inspire__card-text">В Саранске состоится общегородской День здоровья</p>
 							</div>
-							<div class="swiper-slide inspire__card"> <img class="inspire__card-img" src="/img/inspire-img5.png" alt="">
+							<div class="inspire__card swiper-slide"><img class="inspire__card-img" src="/img/inspire-img5.png" alt="">
 								<p class="inspire__card-text">Рецепты национальной кухни. Мордовские пельмени.</p>
 							</div>
-							<div class="swiper-slide inspire__card"> <img class="inspire__card-img" src="/img/inspire-img5.png" alt="">
+							<div class="inspire__card swiper-slide"><img class="inspire__card-img" src="/img/inspire-img5.png" alt="">
 								<p class="inspire__card-text">Рецепты национальной кухни. Мордовские пельмени.</p>
 							</div>
-							<div class="swiper-slide inspire__card"> <img class="inspire__card-img" src="/img/inspire-img5.png" alt="">
+							<div class="inspire__card swiper-slide"><img class="inspire__card-img" src="/img/inspire-img5.png" alt="">
 								<p class="inspire__card-text">Рецепты национальной кухни. Мордовские пельмени.</p>
 							</div>
-							<div class="swiper-slide inspire__card"> <img class="inspire__card-img" src="/img/inspire-img5.png" alt="">
+							<div class="inspire__card swiper-slide"><img class="inspire__card-img" src="/img/inspire-img5.png" alt="">
 								<p class="inspire__card-text">Рецепты национальной кухни. Мордовские пельмени.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="dont-miss">
+			<section class="home-section home-section--dont-miss">
 				<div class="container">
 					<h2 class="title-section title-section--left">Не пропусти знаковое!</h2>
 					<div class="dont-miss__wrapper"> 
@@ -127,7 +223,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="open-mordovia">
+			<section class="home-section home-section--open-mordovia">
 				<div class="container">
 					<h2 class="title-section title-section--left">Открой Мордовию! </h2>
 					<div class="open-mordovia__wrapper"> 
@@ -145,26 +241,47 @@
 								<li class="open-mordovia__content-item">Мордовия – это регион, где гармонично сочетаются исторические древности, спрятанные от суетного мира в благоговейной тишине вековых дубрав, и динамичная жизнь инновационных научно-технических центров, культурные ценности народа и современная архитектура зданий.</li>
 							</ul><a class="open-mordovia__content-link" href="#">Подробнее</a>
 						</div>
-						<iframe class="open-mordovia__video" src="https://www.youtube.com/embed/aZMM3T4ogbQ?si=b5mwW0aj_ExZR8ZF" width="872" height="506" frameborder="0"> </iframe>
+						<div class="video-wrapper">
+							<iframe class="open-mordovia__video" src="https://www.youtube.com/embed/aZMM3T4ogbQ?si=b5mwW0aj_ExZR8ZF" width="100%" height="100%" frameborder="0"> </iframe>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section class="subscribe">
+			<section class="home-section home-section--subscribe">
 				<div class="container">
 					<h2 class="title-section title-section--left">Подпишись!</h2>
-					<div class="swiper"> 
-						<div class="swiper-wrapper"> 
-							<div class="swiper-slide"> <img class="swiper-slide__img" src="./img/sub-img1.png" alt=""></div>
-							<div class="swiper-slide"> <img class="swiper-slide__img" src="./img/sub-img2.png" alt=""></div>
-							<div class="swiper-slide"> <img class="swiper-slide__img" src="./img/sub-img3.png" alt=""></div>
-							<div class="swiper-slide"> <img class="swiper-slide__img" src="./img/sub-img4.png" alt=""></div>
-							<div class="swiper-slide"> <img class="swiper-slide__img" src="./img/sub-img4.png" alt=""></div>
-							<div class="swiper-slide"> <img class="swiper-slide__img" src="./img/sub-img4.png" alt=""></div>
+					<div class="subscribe-swiper swiper"> 
+						<div class="subscribe__cards swiper-wrapper"> 
+							<div class="subscribe__card swiper-slide"> <img class="subscribe__card-img" src="./img/sub-img1.png" alt=""></div>
+							<div class="subscribe__card swiper-slide"> <img class="subscribe__card-img" src="./img/sub-img2.png" alt=""></div>
+							<div class="subscribe__card swiper-slide"> <img class="subscribe__card-img" src="./img/sub-img3.png" alt=""></div>
+							<div class="subscribe__card swiper-slide"> <img class="subscribe__card-img" src="./img/sub-img4.png" alt=""></div>
+							<div class="subscribe__card swiper-slide"> <img class="subscribe__card-img" src="./img/sub-img4.png" alt=""></div>
+							<div class="subscribe__card swiper-slide"> <img class="subscribe__card-img" src="./img/sub-img4.png" alt=""></div>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper"> 
+					<div class="footer__inner-info">
+						<div class="logo--footer"> <img class="logo logo__img--footer" src="./img/logo-footer.svg" alt=""></div>
+						<div class="footer__info"> 
+							<p class="footer__info-text">Туристско-информационный центр республики Мордовия <span>430005, г. Саранск, ул. Б.Хмельницкого, д. 26, оф. 106</span></p><a class="footer__info-privacy-policy" href="">Политика конфиденциальности</a>
+						</div>
+					</div>
+					<div class="footer__inner-actions"> <a class="footer__tel" href="tel:+7 (8342) 77-76-77">+7 (8342) 77-76-77</a><a class="footer__question" href="#!">Задать вопрос</a>
+						<ul class="footer__social-list"> 
+							<li class="footer__social-item"> <a class="footer__social-link" href=""><img class="footer__social-link-icon" src="./img/vk-icon.svg" alt=""></a></li>
+							<li class="footer__social-item"> <a class="footer__social-link" href=""><img class="footer__social-link-icon" src="./img/odnok-icon.svg" alt=""></a></li>
+							<li class="footer__social-item"> <a class="footer__social-link" href=""><img class="footer__social-link-icon" src="./img/dzen-icon.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="./js/swiper.js">   </script>
 	</body>

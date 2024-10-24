@@ -1,12 +1,11 @@
 .open-mordovia {
    
-    margin-bottom: 180px;
 }
 
 
 
 .open-mordovia__wrapper {
-   margin-top: 30px;
+   
    display: flex;
    justify-content: space-between;
    
@@ -30,17 +29,16 @@
     color: #DA1C22;
 }
 
+.video-wrapper {
+    width:872px;
+     height:506px;
+}
+
 .open-mordovia__video {
     
 }
 
 
-
-.open-mordovia__video-bg {
-   
-    
-    
-}
 
 @media (max-width:1300px) {
     .open-mordovia__wrapper {

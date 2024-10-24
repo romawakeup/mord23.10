@@ -34,7 +34,7 @@
     },
   ];
 
-section.inspire
+section.home-section.home-section--inspire
   .container
     .inspire__title-wrapper 
       h2.title-section.title-section--left Вдохновись! 
@@ -45,10 +45,10 @@ section.inspire
           a.inspire__link(href="") Новости
         li.inspire__item 
           a.inspire__link(href="") Топ-события
-    .swiper 
-      .swiper-wrapper.inspire__cards 
+    .inspire-swiper.swiper 
+      .inspire__cards.swiper-wrapper
         each card in cards
-          .swiper-slide.inspire__card 
+          .inspire__card.swiper-slide
             img.inspire__card-img(src=`${card.image}`, alt="")
             p.inspire__card-text=card.title
 

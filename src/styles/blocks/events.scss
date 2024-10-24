@@ -1,10 +1,6 @@
-.events {
-    margin-bottom: 180px;
-}
+.events {}
 
-.events__wrapper {
-    
-}
+.events__wrapper {}
 
 .events__cards {
     display: flex;
@@ -13,12 +9,13 @@
 }
 
 .events__card {
-
+    width: 24%;
 }
 
 .events__card-img {
-    min-width: 302px;
-    min-height: 214px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     border-top-left-radius: 26px;
     border-top-right-radius: 26px;
     border-bottom-right-radius: 26px;
@@ -26,23 +23,23 @@
 }
 
 .title-card {
-    max-width: 428px;
-    font-size: 17px;
-    font-weight: 700;
-    color: $black;
-    margin-bottom: 10px;
+   
 }
 
-.events__card-date {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+
 
 .events__card-date-img {}
 
 .events__card-date-text {
-    color: #747474;
-    font-size: 14px;
+    
 }
 
+.card {}
+
+.card__picture {}
+
+.card__picture-img {}
+
+.card__content-title {}
+
+.card__content-text {}

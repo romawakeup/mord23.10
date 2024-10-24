@@ -1,11 +1,10 @@
 .inspire {
     
-    margin-bottom: 180px;
+    
 }
 
 
 .inspire__title-wrapper {
-    
     display: flex;
     align-items: center;
     gap: 30px;
@@ -15,6 +14,7 @@
 .inspire__list {
     display: flex;
     gap: 6px;
+    margin-bottom: 50px;
 
 }
 
@@ -49,25 +49,22 @@
 }
 
 .inspire__cards {
-    max-width: 1805px;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-
-.swiper-wrapper {
-    display: flex;
+    // max-width: 1805px;
+    // margin: 0 auto;
     
 }
 
-.swiper-slide {}
 
-.inspire__card {}
+.inspire__card {
+    min-width: 190px;
+    min-height: 238px;
+}
 
 .inspire__card:hover {}
 
 .inspire__card-img {
-    min-width: 190px;
-    min-height: 238px;
+    min-width: 100%;
+    min-height: auto;
     object-fit: cover;
     border-top-left-radius: 23px;
     border-top-right-radius: 23px;

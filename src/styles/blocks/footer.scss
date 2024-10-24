@@ -9,8 +9,7 @@
 }
 
 .footer__wrapper {
-    margin: 0 auto;
-    max-width: 1740px;
+    
     padding: 40px 15px 30px 15px;
     display: flex;
     align-items: center;
@@ -69,6 +68,7 @@
     font-weight: 700;
     line-height: 1.49;
     white-space: nowrap;
+    color: $white;
 }
 
 .footer__question {

@@ -1,24 +1,16 @@
-.excursions {
-    padding-top: 65px;
+
+.home-section--excursions {
     background-color: #F4F4F4;
-    margin-bottom: 100px;
 }
 
 .excursions__wrapper {
-    padding-bottom: 180px;
-}
-
-
-
-.excursions__bg-img{
-    
     
 }
+
 
 .excursions__cards {
     display: flex;
     gap: 5%;
-    margin-bottom: 180px;
     overflow-x: auto;
 }
 
@@ -46,23 +38,36 @@
 .excursions__btn {
     margin-top: 50px;
     border: 2px solid white;
-    padding: 17px 38px;
+    padding: 17px 50px 17px 38px;
     border-radius: 66px;
     display: flex;
     align-items: center;
     gap: 5%;
     transition: background-color .3s ease;
+    font-size: 22px;
+    color: $white;
+    font-weight: 500;
+    position: relative;
 }
 
 .excursions__btn:hover {
     background-color: #E52A2E99;
 }
 
-.excursions__btn-text {
-    font-family: 'Lato';
-    font-size: 22px;
-    color: $white;
-    font-weight: 600;
+
+.excursions__btn::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("./img/arrow-right.svg");
+    background-size: contain;
+    
+    
 }
 
 .excursions__btn-icon {}

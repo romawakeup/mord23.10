@@ -21,11 +21,11 @@
    
   ];
 
-section.subscribe
+section.home-section.home-section--subscribe
     .container
         h2.title-section.title-section--left Подпишись!
-        .swiper 
-            .swiper-wrapper 
+        .subscribe-swiper.swiper 
+            .subscribe__cards.swiper-wrapper 
                  each card in cards
-                    .swiper-slide 
-                        img.swiper-slide__img(src=`${card.image}`, alt="")
+                    .subscribe__card.swiper-slide 
+                        img.subscribe__card-img(src=`${card.image}`, alt="")

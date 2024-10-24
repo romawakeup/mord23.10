@@ -1,23 +1,20 @@
-const swiper = new Swiper(".swiper", {
+const swiperSubs = new Swiper(".subscribe-swiper", {
+  loop: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+  slidesPerView: 4,
+});
+
+
+const swiper = new Swiper(".inspire-swiper", {
   loop: true,
   autoplay: {
     delay: 1000,
     disableOnInteraction: false,
   },
   slidesPerView: 5,
-  breakpoints: {
-
-    768: {
-      slidesPerView: 1,
-    },
-
-    780: {
-      slidesPerView: 3,
-    },
-
-    1025: {
-      slidesPerView: 5,
-    },
-  },
+ 
 });
 

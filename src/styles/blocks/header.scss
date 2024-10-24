@@ -30,7 +30,7 @@
 
 .header__logo-text {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 600;
     color: #A72327;
     text-transform: uppercase;
 }
@@ -72,7 +72,7 @@
     gap: 30%;
 }
 
-.header__search {}
+.header__search-btn {}
 
 .search__search-icon {
     min-width: 22px;
@@ -81,7 +81,7 @@
 
 }
 
-.header__airplane {}
+.header__airplane-link {}
 
 .header__airplane-icon {
     min-width: 45px;
@@ -89,8 +89,9 @@
     cursor: pointer;
 }
 
-.header__language {
+.header__language-btn {
     display: flex;
+    align-items: center;
     gap: 3px;
     cursor: pointer;
 }
